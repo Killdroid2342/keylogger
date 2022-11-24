@@ -1,8 +1,9 @@
 import React from 'react';
+import { Fragment } from 'react';
 
 const TempAPI = () => {
     return (
-        <>
+        <Fragment>
             <h1 className='text-center text-3xl font-bold text-white mt-40'>Temperature App</h1>
             <div className='flex flex-col items-center justify-center mt-28 text-center'>
                 <div className=' border-2 border-white flex flex-col rounded-md p-12 '>
@@ -11,7 +12,7 @@ const TempAPI = () => {
                     <button className='border-2 border-white p-3 rounded-md text-l font-bold text-white mt-8'>Get Temperature And Location</button>
                 </div>
             </div>
-        </>
+        </Fragment>
     );
 };
 
