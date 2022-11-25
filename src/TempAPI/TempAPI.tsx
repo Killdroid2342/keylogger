@@ -3,7 +3,19 @@ import React, { Fragment, useState } from 'react';
 
 const TempAPI = () => {
     const [weather, setWeather] = useState([])
-
+    const getWeather = async () => {
+        axios
+          .get(
+            ''
+          )
+          .then((res) => {
+            // console.log(res);
+            setWeather(res.data);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      };
     return (
         <Fragment>
             <h1 className='text-center text-3xl font-bold text-white mt-40'>Temperature App</h1>
