@@ -6,7 +6,7 @@ const TempAPI = () => {
     const getWeather = async () => {
         axios
           .get(
-            'http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={6281aa4868ce6489c8799b5111a227c8}'
+            ''
             )
           .then((res) => {
             console.log(res);
