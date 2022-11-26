@@ -1,11 +1,11 @@
 import React from 'react'
-import TempAPI from './TempAPI/TempAPI'
+import SeeType from './See-Typing/See-Typing'
 function App() {
 
 document.title='Tempreture'
   return (
     <div className="App">
-      <TempAPI />
+      <SeeType />
     </div>
   )
 }
