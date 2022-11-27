@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
 
 const SeeType = () => {
-  const [typing, setTyping] = useState('');
+  const [keys, setKeys] = useState('');
 
   const type = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setTyping(e.target.value);
-    console.log(typing);
+    setKeys(e.target.value);
+    console.log(keys);
   };
   return (
     <div className='flex flex-col items-center justify-center h-screen'>
       <div className='m-auto'>
-        <h1 className='mx-auto w-fit text-slate-400 my-2 text-xl'>
-          See What You Type
+        <h1 className='mx-auto font-serif font-bold w-fit text-white mb-10 my-2 text-xl'>
+          Log Your Keys
         </h1>
         <input
           type='text'
           onChange={type}
           placeholder='Enter Text Here'
-          className='border-2 border-white bg-transparent text-white placeholder-white rounded-md text-center p-3 font-bold font-mono'
+          className='border-2 border-white bg-transparent text-white w-fit placeholder-white rounded-md text-center p-3 font-bold font-mono'
         />
-        <p className='text-white'>{typing}</p>
+        <p className='text-white font-bold mt-10 fixed p-2'>{keys}</p>
       </div>
     </div>
   );
