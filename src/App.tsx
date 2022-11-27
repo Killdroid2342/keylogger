@@ -1,13 +1,12 @@
-import React from 'react'
-import SeeType from './See-Typing/See-Typing'
+import React from 'react';
+import LoggingKeys from './LoggingKeys/LoggingKeys';
 function App() {
-
-document.title='See What Your Typing'
+  document.title = 'See What Your Typing';
   return (
-    <div className="App">
-      <SeeType />
+    <div className='App'>
+      <LoggingKeys />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
