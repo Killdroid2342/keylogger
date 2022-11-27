@@ -1,7 +1,7 @@
 import React from 'react';
 import LoggingKeys from './LoggingKeys/LoggingKeys';
 function App() {
-  document.title = 'See What Your Typing';
+  document.title = 'Log All Of Your Keys';
   return (
     <div className='App'>
       <LoggingKeys />
